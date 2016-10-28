@@ -1,0 +1,26 @@
+{
+  "manifest_version":2,
+
+  "name": "darkness",
+  "description": "fall into darkness",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_title": "darkness",
+    "default_popup": "popup.html",
+    "default_icon": "darkness.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "*://*/*",
+    "storage"
+  ],
+  "content_scripts": [{
+    "matches":["*://*/*"],
+    "css": ["darkness.css"]
+  }],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

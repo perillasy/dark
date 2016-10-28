@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Scheme</title>
+    <link rel="stylesheet" href="popup.css">
+    <style>
+        .switch {
+            cursor: pointer;
+            display: inline-block;
+            background: #acacae;
+            border: 2px solid transparent;
+            height: 30px;
+            width: 60px;
+            position: relative;
+            border-radius: 50px;
+        }
+        .switch:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            border-radius:50%;
+            background: white;
+            transition:  left 0.2s;
+        }
+        .switch.on:before {
+            left: 50%;
+        }
+        .switch.on {
+            background-color: #28b473;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 200px;">
+    <span id="switch" class="switch"></span>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>

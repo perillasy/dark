@@ -1,0 +1,14 @@
+.custom-color body {
+  background-color: #2b2b2b !important;
+  color: #bcc2cd !important; }
+  .custom-color body * {
+    background-color: inherit !important;
+    color: inherit !important; }
+  .custom-color body code, .custom-color body pre, .custom-color body input[type=search] {
+    background-color: #5e5c5b !important; }
+  .custom-color body a {
+    color: #8cc1d3 !important; }
+  .custom-color body ::selection {
+    background-color: #61936f; }
+
+/*# sourceMappingURL=darkness.css.map */
